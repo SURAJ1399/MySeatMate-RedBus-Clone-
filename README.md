@@ -14,3 +14,10 @@ User can book seat like readbus only  difference is that its based on cars. It h
   <img src="https://github.com/SURAJ1399/Images/blob/master/tia2345447763576894053.png" width="30%">
 
 </div>
+<div class="row">
+    <img src="https://github.com/SURAJ1399/Images/blob/master/tia1231725258295931946.png" width="30%">
+<img src="https://github.com/SURAJ1399/Images/blob/master/tia1817541210825255763.png" width="30%">
+
+  <img src="https://github.com/SURAJ1399/Images/blob/master/tia6599547371229960000.png" width="30%">
+
+</div>
