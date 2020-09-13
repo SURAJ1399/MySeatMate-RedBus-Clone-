@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/AppTheme.Toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/main"
+                    android:src="@drawable/bus_image_4" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/print_clearly"
+                    android:text="Welcome  Admin!"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/gotham"
+                    android:text="Login If You Want To Manage.."
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/hh"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/main"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:id="@+id/ll"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="23dp"
+                            android:text="Sign In"
+                            android:fontFamily="@font/gotham"
+                            android:layout_marginLeft="0dp"
+                            android:textSize="32dp"
+                            android:textColor="#000"
+                            android:textStyle="bold"/>
+
+
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/phoneAuth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:padding="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Phone number"
+                                    android:fontFamily="@font/gotham"
+                                    android:textSize="19sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center_vertical">
+
+                                    <com.hbb20.CountryCodePicker
+                                        android:id="@+id/ccp"
+                                        android:clickable="false"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:ccp_defaultNameCode="IN"
+                                        app:ccp_clickable="false"
+                                        android:focusable="false"
+                                        />
+
+                                    <EditText
+                                        android:id="@+id/phoneText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:hint="Enter Mobile No"
+                                        android:fontFamily="@font/gotham"
+                                        android:inputType="phone"
+
+                                        android:singleLine="true" />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:gravity="center_vertical"/>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/send_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/hh"
+                    android:onClick="sendCode"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/calibri"
+                    android:text="Request One Time Password"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="OnClick" />
+
+                <Button
+                    android:id="@+id/verifyotp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:onClick="verifyCode"
+                    android:layout_margin="40dp"
+                    android:layout_below="@id/send_otp"
+                    android:background="@drawable/buttonshape"
+                    android:fontFamily="@font/calibri"
+                    android:text="Click To Verify"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    tools:ignore="OnClick" />
+
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
