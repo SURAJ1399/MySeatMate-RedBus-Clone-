@@ -1,5 +1,6 @@
 # MySeatMate-RedBus-Clone-
 User can book seat like readbus only  difference is that its based on cars. It has three panels
+
 Download User App and Search for Delhi To Patna
 https://drive.google.com/file/d/1V6rIpVcsnxttS2JWWS0urnJ3pLL21odW/view?usp=sharing
 
